@@ -491,7 +491,7 @@ in order of most votes to least, we could write:
 	  .sortBy { case (_, count) => count }
 	  .reverse
 
-.LP the code is nearly as succinct, but much more clearly expresses both the transformations take place (by naming intermediate values), and the structure of the data being operated on (by naming parameters). If you worry about namespace pollution with this style, group expressions with <code>{}</code>:
+.LP the code is nearly as succinct, but much more clearly expresses both the transformations that take place (by naming intermediate values), and the structure of the data being operated on (by naming parameters). If you worry about namespace pollution with this style, group expressions with <code>{}</code>:
 
 	val orderedVotes = {
 	  val votesByLang = ...
